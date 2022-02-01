@@ -1,7 +1,7 @@
 name: 🐞 Helix Bug
 description: File a helix bug/issue
 title: "[BUG] <title>"
-labels: [bug, needs triage]
+labels: [bug, needs triage, helix]
 body:
 - type: checkboxes
   attributes:
