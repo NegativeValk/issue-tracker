@@ -21,9 +21,9 @@ body:
     validations:
       required: true
 - type: textarea
-   attributes:
+  attributes:
     label: Game Version
-    description: The number at the top left of the screen
+    description: Number at the top left of the screen
   validations:
     required: true
 - type: textarea
