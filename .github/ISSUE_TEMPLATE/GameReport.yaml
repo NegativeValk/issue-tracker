@@ -1,0 +1,54 @@
+name: 🐞 Game Bug
+description: File a game bug/issue
+title: "[BUG] <title>"
+labels: [bug, needs triage, game]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: dropdown
+  attributes:
+    label: Location
+    description: The server where the bug is
+    options:
+      - Live
+      - Live Reserved Server
+      - Live Private Server
+    validations:
+      required: true
+- type: textarea
+   attributes:
+    label: Game Version
+    description: The number at the top left of the screen
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. Do this...
+      2. Click this...
+      3. Do this again...
+      4. See error...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Developer console output? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
