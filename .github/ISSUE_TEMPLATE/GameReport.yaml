@@ -18,8 +18,8 @@ body:
       - Live
       - Live Reserved Server
       - Live Private Server
-    validations:
-      required: true
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Game Version
